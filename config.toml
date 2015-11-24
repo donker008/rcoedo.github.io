@@ -1,0 +1,21 @@
+baseurl = "http://rcoedo.com/"
+languageCode = "en-us"
+title = "Roman Coedo"
+theme = "hugo-steam-theme"
+paginate = 10
+
+[params]
+    title = "Roman Coedo"
+    subtitle = "Things for the present you and the future me"
+    copyright = "Released under the MIT license."
+    themeColor = "red"
+    googleAnalytics = ""
+    name = "Roman Coedo"
+    bio = "I'm a software developer currently working at Trabe. I like to build cool things with nice people."
+    description = "This is a blog. Yep."
+    twitter = "rcoedo"
+    github = "rcoedo"
+    keepReadingStr = "Keep reading"
+    backtotopStr = "Back to top"
+    shareStr = "Share"
+    pageNotFoundTitle = "404 - Page not found"
