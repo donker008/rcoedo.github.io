@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Roman Coedo</title>
+    <link>http://rcoedo.github.io/</link>
+    <description>Recent content on Roman Coedo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 03 Dec 2015 09:26:47 +0100</lastBuildDate>
+    <atom:link href="http://rcoedo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Isomorphic site with react, springboot and webpack</title>
+      <link>http://rcoedo.github.io/post/isomorphic-react-springboot-hot-load/</link>
+      <pubDate>Thu, 03 Dec 2015 09:26:47 +0100</pubDate>
+      
+      <guid>http://rcoedo.github.io/post/isomorphic-react-springboot-hot-load/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu lectus sodales, consectetur eros eget, aliquet mi. Aliquam ac tempus lacus. Vivamus malesuada, nunc et ullamcorper sollicitudin, eros orci pellentesque dolor, a mattis ante dui et odio. Proin quis lacinia dolor, posuere auctor turpis. Etiam id bibendum leo, vel iaculis risus. Nullam rhoncus erat risus, at blandit quam malesuada a. Nullam egestas vel lorem vitae scelerisque. Ut suscipit nisi quis quam elementum, eu blandit urna consectetur. Vivamus tempor, sapien eget efficitur aliquam, ligula eros varius sem, in sagittis eros felis a nisl. Integer id molestie eros, pharetra congue tellus. Etiam iaculis, magna eu vestibulum molestie, magna est ullamcorper augue, a consequat eros nunc eu odio. Aliquam ut nibh quis nisl hendrerit rhoncus. Maecenas mauris arcu, commodo nec magna quis, blandit varius lacus. Sed et consectetur urna. Vivamus sit amet lorem neque.&lt;/p&gt;
+
+&lt;p&gt;In leo sapien, venenatis in lobortis ut, porta id quam. Phasellus ultricies ligula sit amet massa posuere, non ornare enim ullamcorper. Nullam felis nulla, volutpat nec ipsum at, facilisis tempus lectus. Aenean a mauris et justo vehicula mollis quis vitae dolor. Mauris finibus feugiat est, nec imperdiet ex pulvinar id. Cras scelerisque, magna vitae porttitor consectetur, est nisi tincidunt nunc, vitae posuere eros arcu nec ante. Nam mollis varius mauris, id ullamcorper nunc mattis a. Phasellus aliquet sapien vitae turpis lacinia vulputate. Sed sem metus, egestas vel sagittis nec, tristique sit amet eros. In dignissim maximus enim, vel efficitur lacus faucibus sed. Proin ullamcorper, augue non pulvinar vehicula, nulla est malesuada arcu, tincidunt gravida risus tellus sed nibh. Maecenas sit amet egestas turpis. Pellentesque vel metus ac purus sagittis scelerisque. Vestibulum sit amet libero tellus.&lt;/p&gt;
+
+&lt;p&gt;Morbi et porttitor felis. Nunc mattis nibh id nibh suscipit, vitae lobortis nunc mattis. Cras porttitor tortor id purus rhoncus, a hendrerit neque vehicula. Nulla ullamcorper mollis finibus. Vivamus ipsum orci, molestie vitae venenatis sed, egestas ut nulla. Maecenas convallis facilisis arcu et aliquet. Suspendisse elementum interdum sollicitudin. Proin ac diam sed magna pretium dapibus at in tortor. Quisque nisi mauris, molestie eget facilisis euismod, tincidunt id leo. Morbi porta, eros sollicitudin vehicula suscipit, velit libero convallis nisl, ut posuere sem nulla eu urna. Cras sodales cursus nisi sed vehicula. Nunc interdum sem lectus. Vivamus urna mi, facilisis sed porttitor vitae, tincidunt in elit. Nulla vitae consequat odio. Phasellus at sagittis nunc. Maecenas ultricies vitae sem at luctus.&lt;/p&gt;
+
+&lt;p&gt;Praesent facilisis quam ipsum, quis auctor mi faucibus vitae. Etiam fermentum mauris sed lacus pellentesque, quis euismod sem pharetra. Nulla ultricies nec felis a luctus. Aenean eu libero quam. Integer lectus risus, ornare nec tristique sit amet, faucibus sed est. Etiam vehicula fermentum lectus, gravida finibus tortor bibendum sed. Sed rhoncus turpis ut nibh congue, sit amet porttitor est commodo. Ut feugiat consectetur tristique. Donec sed fermentum quam. Aenean placerat vel est in rutrum. Proin sed volutpat nisi, quis ullamcorper mi. Curabitur eget fermentum est.&lt;/p&gt;
+
+&lt;p&gt;Nullam orci mauris, malesuada eu odio vitae, porta maximus justo. Aliquam erat volutpat. Nulla tempor purus felis, id porta arcu ornare in. Sed sodales dapibus est, dapibus lobortis nisl accumsan vel. Quisque eget ultrices urna. Pellentesque dictum aliquet mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed aliquam purus. Praesent tincidunt elementum nulla vitae vulputate. Proin vitae ultricies enim, tempor euismod justo. Phasellus finibus tincidunt velit. Integer elit eros, ullamcorper et felis in, auctor vestibulum mi. Sed hendrerit elit vel suscipit luctus.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hugo, a static site generator</title>
+      <link>http://rcoedo.github.io/post/hugo-static-site-generator/</link>
+      <pubDate>Thu, 03 Dec 2015 08:43:51 +0100</pubDate>
+      
+      <guid>http://rcoedo.github.io/post/hugo-static-site-generator/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu lectus sodales, consectetur eros eget, aliquet mi. Aliquam ac tempus lacus. Vivamus malesuada, nunc et ullamcorper sollicitudin, eros orci pellentesque dolor, a mattis ante dui et odio. Proin quis lacinia dolor, posuere auctor turpis. Etiam id bibendum leo, vel iaculis risus. Nullam rhoncus erat risus, at blandit quam malesuada a. Nullam egestas vel lorem vitae scelerisque. Ut suscipit nisi quis quam elementum, eu blandit urna consectetur. Vivamus tempor, sapien eget efficitur aliquam, ligula eros varius sem, in sagittis eros felis a nisl. Integer id molestie eros, pharetra congue tellus. Etiam iaculis, magna eu vestibulum molestie, magna est ullamcorper augue, a consequat eros nunc eu odio. Aliquam ut nibh quis nisl hendrerit rhoncus. Maecenas mauris arcu, commodo nec magna quis, blandit varius lacus. Sed et consectetur urna. Vivamus sit amet lorem neque.&lt;/p&gt;
+
+&lt;p&gt;In leo sapien, venenatis in lobortis ut, porta id quam. Phasellus ultricies ligula sit amet massa posuere, non ornare enim ullamcorper. Nullam felis nulla, volutpat nec ipsum at, facilisis tempus lectus. Aenean a mauris et justo vehicula mollis quis vitae dolor. Mauris finibus feugiat est, nec imperdiet ex pulvinar id. Cras scelerisque, magna vitae porttitor consectetur, est nisi tincidunt nunc, vitae posuere eros arcu nec ante. Nam mollis varius mauris, id ullamcorper nunc mattis a. Phasellus aliquet sapien vitae turpis lacinia vulputate. Sed sem metus, egestas vel sagittis nec, tristique sit amet eros. In dignissim maximus enim, vel efficitur lacus faucibus sed. Proin ullamcorper, augue non pulvinar vehicula, nulla est malesuada arcu, tincidunt gravida risus tellus sed nibh. Maecenas sit amet egestas turpis. Pellentesque vel metus ac purus sagittis scelerisque. Vestibulum sit amet libero tellus.&lt;/p&gt;
+
+&lt;p&gt;Morbi et porttitor felis. Nunc mattis nibh id nibh suscipit, vitae lobortis nunc mattis. Cras porttitor tortor id purus rhoncus, a hendrerit neque vehicula. Nulla ullamcorper mollis finibus. Vivamus ipsum orci, molestie vitae venenatis sed, egestas ut nulla. Maecenas convallis facilisis arcu et aliquet. Suspendisse elementum interdum sollicitudin. Proin ac diam sed magna pretium dapibus at in tortor. Quisque nisi mauris, molestie eget facilisis euismod, tincidunt id leo. Morbi porta, eros sollicitudin vehicula suscipit, velit libero convallis nisl, ut posuere sem nulla eu urna. Cras sodales cursus nisi sed vehicula. Nunc interdum sem lectus. Vivamus urna mi, facilisis sed porttitor vitae, tincidunt in elit. Nulla vitae consequat odio. Phasellus at sagittis nunc. Maecenas ultricies vitae sem at luctus.&lt;/p&gt;
+
+&lt;p&gt;Praesent facilisis quam ipsum, quis auctor mi faucibus vitae. Etiam fermentum mauris sed lacus pellentesque, quis euismod sem pharetra. Nulla ultricies nec felis a luctus. Aenean eu libero quam. Integer lectus risus, ornare nec tristique sit amet, faucibus sed est. Etiam vehicula fermentum lectus, gravida finibus tortor bibendum sed. Sed rhoncus turpis ut nibh congue, sit amet porttitor est commodo. Ut feugiat consectetur tristique. Donec sed fermentum quam. Aenean placerat vel est in rutrum. Proin sed volutpat nisi, quis ullamcorper mi. Curabitur eget fermentum est.&lt;/p&gt;
+
+&lt;p&gt;Nullam orci mauris, malesuada eu odio vitae, porta maximus justo. Aliquam erat volutpat. Nulla tempor purus felis, id porta arcu ornare in. Sed sodales dapibus est, dapibus lobortis nisl accumsan vel. Quisque eget ultrices urna. Pellentesque dictum aliquet mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed aliquam purus. Praesent tincidunt elementum nulla vitae vulputate. Proin vitae ultricies enim, tempor euismod justo. Phasellus finibus tincidunt velit. Integer elit eros, ullamcorper et felis in, auctor vestibulum mi. Sed hendrerit elit vel suscipit luctus.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>http://rcoedo.github.io/about-me/</link>
+      <pubDate>Thu, 03 Dec 2015 08:25:07 +0100</pubDate>
+      
+      <guid>http://rcoedo.github.io/about-me/</guid>
+      <description>
+
+&lt;h2 id=&#34;lorem-ipsum:8723697e33f65823610bf3f676b8d742&#34;&gt;Lorem ipsum&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis pellentesque arcu, ultrices tempor turpis. Nam non gravida ante. Morbi venenatis accumsan tellus, hendrerit viverra dolor vestibulum sed. Aenean dignissim purus vitae euismod fermentum. Donec sit amet fringilla lectus. Praesent sed elementum purus. Suspendisse potenti. Maecenas quis sollicitudin nibh. Curabitur rhoncus, elit non commodo ornare, neque nisl vestibulum urna, a tristique odio nunc sed nisi. Duis at mauris dapibus, lacinia justo et, varius quam. Praesent molestie ex nec diam pharetra, quis egestas arcu mattis. Nullam vel dolor eu magna tincidunt consequat quis vel quam. Nullam quis felis at mauris fermentum eleifend id vitae nisi. Pellentesque id nibh libero.&lt;/p&gt;
+
+&lt;p&gt;Maecenas finibus dictum orci vel tincidunt. Aenean libero mauris, congue sit amet libero in, blandit semper risus. Suspendisse vel luctus tortor. Etiam suscipit viverra quam, in ultricies ex convallis eget. Curabitur at est eget nunc porttitor condimentum eget a ipsum. Mauris facilisis lorem in dui porta hendrerit. Quisque posuere diam sit amet malesuada varius. Nullam semper purus eros, ac gravida purus vestibulum ut. Aliquam volutpat gravida dolor vitae interdum. Phasellus congue, purus at pellentesque bibendum, augue orci posuere tortor, vitae rhoncus eros orci sit amet mi.&lt;/p&gt;
+
+&lt;p&gt;In ultricies euismod nibh, in pulvinar augue mattis eleifend. Vivamus finibus turpis a dolor malesuada, ut interdum tortor porta. Donec eget placerat mauris. Morbi placerat urna at neque lacinia, iaculis vehicula purus ultricies. Sed hendrerit quis lorem sit amet ullamcorper. Etiam aliquam tempor lacinia. Cras non tincidunt orci. Quisque mollis aliquam lacus, et elementum dolor aliquet sed. Curabitur finibus, velit ac commodo lacinia, est metus facilisis arcu, at accumsan ex elit at nisl. Quisque dictum tempus urna in ullamcorper. Sed iaculis eget ex sit amet efficitur. Nam ac sodales quam. Etiam in faucibus lorem. Integer efficitur, enim eu suscipit luctus, eros enim rhoncus ex, facilisis sollicitudin diam ipsum id dolor. Suspendisse potenti. Sed facilisis orci et scelerisque tempus.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
