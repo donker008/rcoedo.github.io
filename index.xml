@@ -53,13 +53,33 @@
       <guid>http://rcoedo.com/about-me/</guid>
       <description>
 
-&lt;h2 id=&#34;lorem-ipsum:8723697e33f65823610bf3f676b8d742&#34;&gt;Lorem ipsum&lt;/h2&gt;
+&lt;h2 id=&#34;my-present:8723697e33f65823610bf3f676b8d742&#34;&gt;My present&lt;/h2&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis pellentesque arcu, ultrices tempor turpis. Nam non gravida ante. Morbi venenatis accumsan tellus, hendrerit viverra dolor vestibulum sed. Aenean dignissim purus vitae euismod fermentum. Donec sit amet fringilla lectus. Praesent sed elementum purus. Suspendisse potenti. Maecenas quis sollicitudin nibh. Curabitur rhoncus, elit non commodo ornare, neque nisl vestibulum urna, a tristique odio nunc sed nisi. Duis at mauris dapibus, lacinia justo et, varius quam. Praesent molestie ex nec diam pharetra, quis egestas arcu mattis. Nullam vel dolor eu magna tincidunt consequat quis vel quam. Nullam quis felis at mauris fermentum eleifend id vitae nisi. Pellentesque id nibh libero.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m &lt;strong&gt;Roman&lt;/strong&gt;. I currently work Trabe and live in &lt;strong&gt;A Coruña&lt;/strong&gt;, &lt;strong&gt;Spain&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Maecenas finibus dictum orci vel tincidunt. Aenean libero mauris, congue sit amet libero in, blandit semper risus. Suspendisse vel luctus tortor. Etiam suscipit viverra quam, in ultricies ex convallis eget. Curabitur at est eget nunc porttitor condimentum eget a ipsum. Mauris facilisis lorem in dui porta hendrerit. Quisque posuere diam sit amet malesuada varius. Nullam semper purus eros, ac gravida purus vestibulum ut. Aliquam volutpat gravida dolor vitae interdum. Phasellus congue, purus at pellentesque bibendum, augue orci posuere tortor, vitae rhoncus eros orci sit amet mi.&lt;/p&gt;
+&lt;p&gt;I have a strong &lt;strong&gt;Java&lt;/strong&gt; and &lt;strong&gt;Spring&lt;/strong&gt; background
+and good experience building backend and frontend stuff with &lt;strong&gt;Node&lt;/strong&gt;, &lt;strong&gt;JavaScript&lt;/strong&gt;, &lt;strong&gt;React&lt;/strong&gt;, &lt;strong&gt;Webpack&lt;/strong&gt; and friends.
+I&amp;rsquo;m currently getting myself into &lt;strong&gt;Golang&lt;/strong&gt;, &lt;strong&gt;Ruby&lt;/strong&gt; and &lt;strong&gt;Elixir&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;In ultricies euismod nibh, in pulvinar augue mattis eleifend. Vivamus finibus turpis a dolor malesuada, ut interdum tortor porta. Donec eget placerat mauris. Morbi placerat urna at neque lacinia, iaculis vehicula purus ultricies. Sed hendrerit quis lorem sit amet ullamcorper. Etiam aliquam tempor lacinia. Cras non tincidunt orci. Quisque mollis aliquam lacus, et elementum dolor aliquet sed. Curabitur finibus, velit ac commodo lacinia, est metus facilisis arcu, at accumsan ex elit at nisl. Quisque dictum tempus urna in ullamcorper. Sed iaculis eget ex sit amet efficitur. Nam ac sodales quam. Etiam in faucibus lorem. Integer efficitur, enim eu suscipit luctus, eros enim rhoncus ex, facilisis sollicitudin diam ipsum id dolor. Suspendisse potenti. Sed facilisis orci et scelerisque tempus.&lt;/p&gt;
+&lt;p&gt;I spend more time than I should sharpening my &lt;a href=&#34;https://github.com/rcoedo/dotfiles&#34; target=&#34;_blank&#34;&gt;dotfiles&lt;/a&gt;. I&amp;rsquo;m an &lt;strong&gt;emacs&lt;/strong&gt; and &lt;strong&gt;vim&lt;/strong&gt; enthusiast and a &lt;em&gt;terminal geek&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Finally, I love to play my guitar, to collect keyboards, and to drink beer.&lt;/p&gt;
+
+&lt;h2 id=&#34;my-past:8723697e33f65823610bf3f676b8d742&#34;&gt;My past&lt;/h2&gt;
+
+&lt;p&gt;I got a degree in Computer Science at &lt;a href=&#34;https://www.udc.es/&#34; target=&#34;_blank&#34;&gt;Universidade da Coruña&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;https://jclouds.apache.org/blog/2014/09/23/google-summer-of-code-2014-results/&#34; target=&#34;_blank&#34;&gt;2014&lt;/a&gt; and
+&lt;a href=&#34;https://www.google-melange.com/gsoc/project/details/google/gsoc2015/rcoedo/5676830073815040&#34; target=&#34;_blank&#34;&gt;2015&lt;/a&gt;
+I attended the Google Summer of Code program, colaborating with the &lt;a href=&#34;https://jclouds.apache.org/&#34; target=&#34;_blank&#34;&gt;Apache jclouds project&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;my-future:8723697e33f65823610bf3f676b8d742&#34;&gt;My future&lt;/h2&gt;
+
+&lt;p&gt;???&lt;/p&gt;
+
+&lt;h2 id=&#34;contact-me:8723697e33f65823610bf3f676b8d742&#34;&gt;Contact me&lt;/h2&gt;
+
+&lt;p&gt;You can contact me via &lt;a href=&#34;mailto:romancoedo@gmail.com&#34; target=&#34;_blank&#34;&gt;email&lt;/a&gt;, find me on &lt;a href=&#34;http://twitter.com/rcoedo&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt; or find me on &lt;a href=&#34;http://github.com/rcoedo&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
