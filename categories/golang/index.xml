@@ -10,20 +10,236 @@
     <atom:link href="http://rcoedo.com/categories/golang/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Hugo, a static site generator</title>
+      <title>Deploy your blog to github pages automatically using Hugo and Travis</title>
       <link>http://rcoedo.com/post/hugo-static-site-generator/</link>
       <pubDate>Thu, 03 Dec 2015 08:43:51 +0100</pubDate>
       
       <guid>http://rcoedo.com/post/hugo-static-site-generator/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eu lectus sodales, consectetur eros eget, aliquet mi. Aliquam ac tempus lacus. Vivamus malesuada, nunc et ullamcorper sollicitudin, eros orci pellentesque dolor, a mattis ante dui et odio. Proin quis lacinia dolor, posuere auctor turpis. Etiam id bibendum leo, vel iaculis risus. Nullam rhoncus erat risus, at blandit quam malesuada a. Nullam egestas vel lorem vitae scelerisque. Ut suscipit nisi quis quam elementum, eu blandit urna consectetur. Vivamus tempor, sapien eget efficitur aliquam, ligula eros varius sem, in sagittis eros felis a nisl. Integer id molestie eros, pharetra congue tellus. Etiam iaculis, magna eu vestibulum molestie, magna est ullamcorper augue, a consequat eros nunc eu odio. Aliquam ut nibh quis nisl hendrerit rhoncus. Maecenas mauris arcu, commodo nec magna quis, blandit varius lacus. Sed et consectetur urna. Vivamus sit amet lorem neque.&lt;/p&gt;
+      <description>
 
-&lt;p&gt;In leo sapien, venenatis in lobortis ut, porta id quam. Phasellus ultricies ligula sit amet massa posuere, non ornare enim ullamcorper. Nullam felis nulla, volutpat nec ipsum at, facilisis tempus lectus. Aenean a mauris et justo vehicula mollis quis vitae dolor. Mauris finibus feugiat est, nec imperdiet ex pulvinar id. Cras scelerisque, magna vitae porttitor consectetur, est nisi tincidunt nunc, vitae posuere eros arcu nec ante. Nam mollis varius mauris, id ullamcorper nunc mattis a. Phasellus aliquet sapien vitae turpis lacinia vulputate. Sed sem metus, egestas vel sagittis nec, tristique sit amet eros. In dignissim maximus enim, vel efficitur lacus faucibus sed. Proin ullamcorper, augue non pulvinar vehicula, nulla est malesuada arcu, tincidunt gravida risus tellus sed nibh. Maecenas sit amet egestas turpis. Pellentesque vel metus ac purus sagittis scelerisque. Vestibulum sit amet libero tellus.&lt;/p&gt;
+&lt;p&gt;The Slashdot effect occurs when a small site gets more traffic than it can handle from a popular website. When this happens the website
+slows down or start responding with &lt;em&gt;Service Unavailable&lt;/em&gt; errors, just like if it was under a &lt;em&gt;Denial of service&lt;/em&gt; attack.&lt;/p&gt;
 
-&lt;p&gt;Morbi et porttitor felis. Nunc mattis nibh id nibh suscipit, vitae lobortis nunc mattis. Cras porttitor tortor id purus rhoncus, a hendrerit neque vehicula. Nulla ullamcorper mollis finibus. Vivamus ipsum orci, molestie vitae venenatis sed, egestas ut nulla. Maecenas convallis facilisis arcu et aliquet. Suspendisse elementum interdum sollicitudin. Proin ac diam sed magna pretium dapibus at in tortor. Quisque nisi mauris, molestie eget facilisis euismod, tincidunt id leo. Morbi porta, eros sollicitudin vehicula suscipit, velit libero convallis nisl, ut posuere sem nulla eu urna. Cras sodales cursus nisi sed vehicula. Nunc interdum sem lectus. Vivamus urna mi, facilisis sed porttitor vitae, tincidunt in elit. Nulla vitae consequat odio. Phasellus at sagittis nunc. Maecenas ultricies vitae sem at luctus.&lt;/p&gt;
+&lt;p&gt;Sometimes a site can be built in a way that it doesn&amp;rsquo;t require content to be dynamically generated for the user. These are called &lt;em&gt;static sites&lt;/em&gt;.
+Since &lt;em&gt;static sites&lt;/em&gt; don&amp;rsquo;t need to generate the html response each time the site is showed to the user they can handle a much
+larger amount of requests per second than their dynamic counterpart.&lt;/p&gt;
 
-&lt;p&gt;Praesent facilisis quam ipsum, quis auctor mi faucibus vitae. Etiam fermentum mauris sed lacus pellentesque, quis euismod sem pharetra. Nulla ultricies nec felis a luctus. Aenean eu libero quam. Integer lectus risus, ornare nec tristique sit amet, faucibus sed est. Etiam vehicula fermentum lectus, gravida finibus tortor bibendum sed. Sed rhoncus turpis ut nibh congue, sit amet porttitor est commodo. Ut feugiat consectetur tristique. Donec sed fermentum quam. Aenean placerat vel est in rutrum. Proin sed volutpat nisi, quis ullamcorper mi. Curabitur eget fermentum est.&lt;/p&gt;
+&lt;p&gt;A blog usually fits the static site description perfectly. Just having a bunch of html, css and javascript files is an elegant and simple solution.
+But you may ask, won&amp;rsquo;t be handling the content a mess?  It won&amp;rsquo;t, I promise!&lt;/p&gt;
 
-&lt;p&gt;Nullam orci mauris, malesuada eu odio vitae, porta maximus justo. Aliquam erat volutpat. Nulla tempor purus felis, id porta arcu ornare in. Sed sodales dapibus est, dapibus lobortis nisl accumsan vel. Quisque eget ultrices urna. Pellentesque dictum aliquet mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed aliquam purus. Praesent tincidunt elementum nulla vitae vulputate. Proin vitae ultricies enim, tempor euismod justo. Phasellus finibus tincidunt velit. Integer elit eros, ullamcorper et felis in, auctor vestibulum mi. Sed hendrerit elit vel suscipit luctus.&lt;/p&gt;
+&lt;h2 id=&#34;enter-static-site-generators:323399aa7f615d16192903ed2560cafe&#34;&gt;Enter static site generators&lt;/h2&gt;
+
+&lt;p&gt;A static site generator is a tool that renders content into html, css and javascript. The content is usually written in markdown and contains
+some metadata like dates, title or categories. The workflow to make a new post is quite simple, just throw in a new markdown file in the right place,
+rebuild your site, and deploy it to your server.&lt;/p&gt;
+
+&lt;h2 id=&#34;hugo-as-our-static-blog-generator:323399aa7f615d16192903ed2560cafe&#34;&gt;&lt;em&gt;Hugo&lt;/em&gt; as our static blog generator&lt;/h2&gt;
+
+&lt;p&gt;After trying out some static site generators for this blog I ended up with &lt;a href=&#34;https://gohugo.io/&#34;&gt;&lt;em&gt;Hugo&lt;/em&gt;&lt;/a&gt;. &lt;em&gt;Hugo&lt;/em&gt; is a really &lt;strong&gt;fast&lt;/strong&gt;
+static site generator written in &lt;em&gt;golang&lt;/em&gt;, and it&amp;rsquo;s also a quite simple tool to get started with.&lt;/p&gt;
+
+&lt;p&gt;If you use brew type &lt;code&gt;brew install hugo&lt;/code&gt; to install it.&lt;/p&gt;
+
+&lt;h2 id=&#34;making-our-first-blog-with-hugo:323399aa7f615d16192903ed2560cafe&#34;&gt;Making our first blog with &lt;em&gt;Hugo&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;Ok, let&amp;rsquo;s make a blog from scratch to get you introduced. First we need to tell &lt;em&gt;Hugo&lt;/em&gt; to generate the blog skeleton. We can do that with the following command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ hugo new site myblog
+$ cd myblog
+$ tree
+.
+├── archetypes
+├── config.toml
+├── content
+├── data
+├── layouts
+└── static
+
+5 directories, 1 file
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We also need a theme. &lt;em&gt;Hugo&lt;/em&gt; has already some nice themes and they are pretty easy to customize. You have a list of themes and demos
+for most of them &lt;a href=&#34;http://themes.gohugo.io/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To install the theme clone its repository into the &lt;code&gt;themes&lt;/code&gt; folder. For this article we are going to use the theme &lt;em&gt;heather-hugo&lt;/em&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git clone https://github.com/hbpasti/heather-hugo themes/heather-hugo
+Cloning into &#39;themes/heather-hugo&#39;...
+remote: Counting objects: 323, done.
+remote: Total 323 (delta 0), reused 0 (delta 0), pack-reused 323
+Receiving objects: 100% (323/323), 602.51 KiB | 56.00 KiB/s, done.
+Resolving deltas: 100% (113/113), done.
+Checking connectivity... done.
+
+$ echo &amp;quot;theme = \&amp;quot;heather-hugo\&amp;quot;&amp;quot; &amp;gt;&amp;gt; config.toml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That&amp;rsquo;s it, we&amp;rsquo;ve made a blog!&lt;/p&gt;
+
+&lt;h2 id=&#34;writing-our-first-post:323399aa7f615d16192903ed2560cafe&#34;&gt;Writing our first post&lt;/h2&gt;
+
+&lt;p&gt;Now it&amp;rsquo;s time to write our first post. &lt;em&gt;Hugo&lt;/em&gt; offers a bunch of commands to generate skeletons. You can also have your own archetypes.
+Type the following command to generate a post:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ hugo new post/my-first-post.md
+/Users/rcoedo/myblog/content/post/my-first-post.md created
+
+$ tree
+.
+├── archetypes
+├── config.toml
+├── content
+│   └── post
+│       └── my-first-post.md
+├── data
+├── layouts
+└── static
+
+6 directories, 2 files
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As you can see posts are kept under &lt;code&gt;./content/post/&lt;/code&gt;. All our content is organized this way so it&amp;rsquo;s easy to manage.&lt;/p&gt;
+
+&lt;p&gt;A post contains two well defined sections: a header and a body.
+The body is the markdown used to generate the html. The header contains metadata about the post itself,
+like the date for the post, the draft status or the title.&lt;/p&gt;
+
+&lt;p&gt;Now edit the post we&amp;rsquo;ve created and add some markdown text to it. Then compile our blog and the site will be generated under
+the &lt;code&gt;public/&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ cat content/post/my-first-post.md
++++
+date = &amp;quot;2015-12-05T11:14:46Z&amp;quot;
+draft = true
+title = &amp;quot;my first post&amp;quot;
++++
+## Markdown is awesome
+Indeed!
+
+$ hugo --buildDrafts
+0 draft content
+0 future content
+2 pages created
+8 paginator pages created
+4 tags created
+2 categories created
+in 26 ms
+
+$ tree public/ 
+public/
+├── 404.html
+├── apple-touch-icon.png
+├── favicon.png
+├── index.html
+├── index.xml
+├── post
+│   ├── index.html
+│   ├── index.xml
+│   └── my-first-post
+│       └── index.html
+├── sitemap.xml
+└── style.css
+
+2 directories, 10 files
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note that we&amp;rsquo;ve passed the option &lt;code&gt;--buildDrafts&lt;/code&gt; to tell hugo to generate pages for our drafts too, otherwise drafts will be ignored.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Hugo&lt;/em&gt; also comes with a server capable of live reloading your browser and a watcher for your files. Every time you save a file
+&lt;em&gt;Hugo&lt;/em&gt; will recompile the changes and reload your browser. All this process is very fast so you will get almost instant feedback.
+To run the server execute, run &lt;code&gt;hugo server --watch --buildDrafts&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now open &lt;a href=&#34;http://localhost:1313/&#34; target=&#34;_blank&#34;&gt;localhost:1313&lt;/a&gt; on your browser and make some changes to &lt;code&gt;my-first-post.md&lt;/code&gt;.
+You&amp;rsquo;ll see how &lt;em&gt;Hugo&lt;/em&gt; compiles the changes and reloads your browser. Cool, isn&amp;rsquo;t it?&lt;/p&gt;
+
+&lt;h2 id=&#34;overriding-theme-defaults:323399aa7f615d16192903ed2560cafe&#34;&gt;Overriding theme defaults&lt;/h2&gt;
+
+&lt;p&gt;We used the &lt;code&gt;heather-hugo&lt;/code&gt; theme for our blog, but we probably want to add our own touch to the site. We can easily override any static file defined
+in our theme by placing a copy inside our site&amp;rsquo;s root.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s make some changes to the theme&amp;rsquo;s style. First run &lt;code&gt;cp themes/heather-hugo/static/style.css static/&lt;/code&gt; to copy our theme&amp;rsquo;s &lt;code&gt;style.css&lt;/code&gt; into our static directory.
+Then open &lt;code&gt;static/style.css&lt;/code&gt; with your editor and make some changes. If you still have the &lt;em&gt;Hugo&lt;/em&gt; server running your browser will reload and you&amp;rsquo;ll be able
+to see the changes you&amp;rsquo;ve made.&lt;/p&gt;
+
+&lt;p&gt;Just like this you can override any other parts of the theme. Awesome!&lt;/p&gt;
+
+&lt;h2 id=&#34;deploying-the-blog-to-github-pages:323399aa7f615d16192903ed2560cafe&#34;&gt;Deploying the blog to github pages&lt;/h2&gt;
+
+&lt;p&gt;We&amp;rsquo;ve made a very simple blog. Now we&amp;rsquo;ll publish the generated content as a github page.&lt;/p&gt;
+
+&lt;p&gt;Github pages follow a simple naming convention. When github finds a repository named &lt;code&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt; for a user accout, it serves the master&amp;rsquo;s
+branch content to be accessed as &lt;a href=&#34;#&#34;&gt;&amp;lt;username&amp;gt;.github.io&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;First create a repository in your github accout following the naming convention. For my username my repository is
+&lt;a href=&#34;https://github.com/rcoedo/rcoedo.github.io&#34; target=&#34;_blank&#34;&gt;rcoedo.github.io&lt;/a&gt;. Clone that repository and then add the content inside &lt;code&gt;public/&lt;/code&gt;
+to the repository, make a commit and push it.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;# These commands are only orientative, is not the purpose of this article
+# to teach git basics, so I didn&#39;t test all this.
+$ git clone git@github.com:&amp;lt;username&amp;gt;/&amp;lt;username&amp;gt;.github.io.git
+$ cp -r public/* &amp;lt;username&amp;gt;.github.io/
+$ cd &amp;lt;username&amp;gt;.github.io
+$ git add --all
+$ git commit -m&#39;First commit&#39;
+$ git push
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You&amp;rsquo;ll be able to find your new blog in &lt;a href=&#34;#&#34;&gt;&amp;lt;username&amp;gt;.github.io&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is good to understand how github pages work but it&amp;rsquo;s not enough to maintain our blog. We don&amp;rsquo;t have the sources under version control, only the compiled
+website.&lt;/p&gt;
+
+&lt;p&gt;To manage my sources I keep a separate branch called &lt;code&gt;source&lt;/code&gt; for the &lt;em&gt;Hugo&lt;/em&gt; website and copy the generated contents from that branch to &lt;code&gt;master&lt;/code&gt; when I want
+to deploy a new version. This way I keep both the source and the generated site in sync and versioned.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;# These commands are only orientative, is not the purpose of this article
+# to teach git basics, so I didn&#39;t test all this.
+$ cd &amp;lt;username&amp;gt;.github.io
+$ git checkout -b source
+$ rm -rf * # Be careful!
+$ cp -r ~/myblog/* .
+$ git add --all
+$ git commit -m&#39;First source commit&#39;
+$ git push --set-upstream origin source
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Yay! now we have both our source and our site versioned!&lt;/p&gt;
+
+&lt;h2 id=&#34;automatic-deployment-with-travis:323399aa7f615d16192903ed2560cafe&#34;&gt;Automatic deployment with travis&lt;/h2&gt;
+
+&lt;p&gt;What we have is pretty good, but deploying the static site is a hell. We can do better.&lt;/p&gt;
+
+&lt;p&gt;We will use travis to automate the whole process of generating the static site and
+moving it to the &lt;code&gt;master&lt;/code&gt; branch. It will be triggered whenever we push changes to the &lt;code&gt;source&lt;/code&gt; branch.&lt;/p&gt;
+
+&lt;p&gt;First of all if you don&amp;rsquo;t already have a &lt;a href=&#34;http://travis-ci.org/&#34; target=&#34;_blank&#34;&gt;travis-ci&lt;/a&gt; account, register one. Add your &lt;code&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt; repository
+to it and go to general settings. Then, turn on the &amp;ldquo;Build only if .travis.yml is present&amp;rdquo; option. I recommend the following settings&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;hugo-static-site-generator-travis.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we need to create a &lt;code&gt;.travis.yml&lt;/code&gt; file on our &lt;code&gt;source&lt;/code&gt; branch and give travis permission to push to our repository.
+Follow &lt;a href=&#34;https://help.github.com/articles/generating-ssh-keys/&#34; target=&#34;_blank&#34;&gt;this&lt;/a&gt; guide to generate a new ssh key. You should have two files now: &lt;code&gt;id_rsa&lt;/code&gt; and &lt;code&gt;id_rsa.pub&lt;/code&gt;. One
+is your private key and the other one is your public key. I suggest you rename them to &lt;code&gt;travis_key&lt;/code&gt; and &lt;code&gt;travis_key.pub&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Install the travis helper gem with &lt;code&gt;gem install travis&lt;/code&gt; (you need to have ruby installed) and run the following commands inside the repository:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;$ git checkout source
+$ touch .travis.yml # Creates the travis config file in the source branch
+$ travis encrypt-file travis_key --add 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After this, you will have an initialized &lt;code&gt;.travis.yml&lt;/code&gt; file and the necessary configuration to use the key. Move your &lt;code&gt;travis_key&lt;/code&gt; and your &lt;code&gt;travis_key.pub&lt;/code&gt; to
+somewhere safe and add the new encrypted file to git. Copy the contents of the public key &lt;code&gt;travis_key.pub&lt;/code&gt; and add it to your repository as a deploy key.
+You can find this option under the deploy key menu in the repository settings.&lt;/p&gt;
+
+&lt;p&gt;After finishing this step Travis will have permission to push to your &lt;code&gt;master&lt;/code&gt; branch and will be triggered whenever something is pushed to &lt;code&gt;source&lt;/code&gt;, but we still need to tell it how
+to build your site. I suggest you check my &lt;a href=&#34;https://raw.githubusercontent.com/rcoedo/rcoedo.github.io/source/.travis.yml&#34; target=&#34;_blank&#34;&gt;.travis.yml&lt;/a&gt;
+config file and adapt it to yours. Also check my deploy script &lt;a href=&#34;https://github.com/rcoedo/rcoedo.github.io/blob/source/scripts/deploy.sh&#34;&gt;here&lt;/a&gt;
+(This script is based on someone&amp;rsquo;s else script but unfortunately I don&amp;rsquo;t remember where I saw it. If you think it&amp;rsquo;s yours I&amp;rsquo;ll be glad to add a reference to it)&lt;/p&gt;
+
+&lt;p&gt;Set these up, add a new post to your source branch, push it and check everything is working!&lt;/p&gt;
+
+&lt;p&gt;I hope you had fun with this article. If you have any questions, thoughts or feedback please contact me on &lt;a href=&#34;http://twitter.com/rcoedo&#34; target=&#34;_blank&#34;&gt;twitter&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
