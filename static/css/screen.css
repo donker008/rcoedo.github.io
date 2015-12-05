@@ -3,7 +3,7 @@
 /* === Core Styles === */
 body {
   background-color: #ffffff;
-  color: #596364; /* darker color */
+  color: #333333; /* darker color */
   font-size: 15px;
   font-weight: 100;
   line-height: 1.6em;
@@ -106,7 +106,7 @@ article.preview,
 a.archive-link,
 .article-nav {
   margin: 20px auto;
-  max-width: 600px;
+  max-width: 700px;
   width: 90%;
 }
 #site-head img {
@@ -303,7 +303,7 @@ footer section {
   font-weight: 300;
   font-size: 18px;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 700px;
   text-transform: uppercase;
   width: 90%;
 }
@@ -319,7 +319,7 @@ nav {
   margin-bottom: 2em;
   text-align: center;
   margin: 20px auto 2em auto;
-  max-width: 600px;
+  max-width: 700px;
 }
 nav ul {
   list-style: none;
@@ -647,7 +647,6 @@ section.footer-social {
 
 section.post-content {
   margin-bottom: 60px;
-  text-align: justify;
 }
 
 section.bloginfo {
