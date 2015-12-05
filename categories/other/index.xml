@@ -233,7 +233,7 @@ somewhere safe and add the new encrypted file to git. Copy the contents of the p
 You can find this option under the deploy key menu in the repository settings.&lt;/p&gt;
 
 &lt;p&gt;After finishing this step Travis will have permission to push to your &lt;code&gt;master&lt;/code&gt; branch and will be triggered whenever something is pushed to &lt;code&gt;source&lt;/code&gt;, but we still need to tell it how
-to build your site. I suggest you check my &lt;a href=&#34;https://raw.githubusercontent.com/rcoedo/rcoedo.github.io/source/.travis.yml&#34; target=&#34;_blank&#34;&gt;.travis.yml&lt;/a&gt;
+to build your site. I suggest you check my &lt;a href=&#34;https://github.com/rcoedo/rcoedo.github.io/blob/source/.travis.yml&#34; target=&#34;_blank&#34;&gt;.travis.yml&lt;/a&gt;
 config file and adapt it to yours. Also check my deploy script &lt;a href=&#34;https://github.com/rcoedo/rcoedo.github.io/blob/source/scripts/deploy.sh&#34;&gt;here&lt;/a&gt;
 (This script is based on someone&amp;rsquo;s else script but unfortunately I don&amp;rsquo;t remember where I saw it. If you think it&amp;rsquo;s yours I&amp;rsquo;ll be glad to add a reference to it)&lt;/p&gt;
 
