@@ -21,10 +21,11 @@ some metadata like dates, title or categories. The workflow to make a new post i
 rebuild your site, and deploy it to your server.
 
 ## *Hugo* as our static blog generator
-After trying out some static site generators for this blog I ended up with <a href="https://gohugo.io/">*Hugo*</a>. *Hugo* is a really **fast**
+After trying out some static site generators for this blog, I ended up with <a href="https://gohugo.io/">*Hugo*</a>. *Hugo* is a really **fast**
 static site generator written in *golang*, and it's also a quite simple tool to get started with.
 
-If you use brew type `brew install hugo` to install it.
+If you use homebrew type `brew install hugo` to install it. You can find a more detailed guide about installing *Hugo*
+<a href="https://gohugo.io/overview/installing/" target="_blank">here</a>.
 
 ## Making our first blog with *Hugo*
 Ok, let's make a blog from scratch to get you introduced. First we need to tell *Hugo* to generate the blog skeleton. We can do that with the following command:
@@ -83,7 +84,7 @@ As you can see posts are kept under `./content/post/`. All our content is organi
 
 A post contains two well defined sections: a header and a body.
 The body is the markdown used to generate the html. The header contains metadata about the post itself,
-like the date for the post, the draft status or the title.
+like the post's date or the title.
 
 Now edit the post we've created and add some markdown text to it. Then compile our blog and the site will be generated under
 the `public/` directory.
@@ -125,9 +126,9 @@ public/
 ```
 Note that we've passed the option `--buildDrafts` to tell hugo to generate pages for our drafts too, otherwise drafts will be ignored.
 
-*Hugo* also comes with a server capable of live reloading your browser and a watcher for your files. Every time you save a file
+*Hugo* also comes with a server capable of live reloading your browser and a file watcher. Every time you save a file
 *Hugo* will recompile the changes and reload your browser. All this process is very fast so you will get almost instant feedback.
-To run the server execute, run `hugo server --watch --buildDrafts`.
+To run the server execute the command `hugo server --watch --buildDrafts`.
 
 Now open <a href="http://localhost:1313/" target="_blank">localhost:1313</a> on your browser and make some changes to `my-first-post.md`.
 You'll see how *Hugo* compiles the changes and reloads your browser. Cool, isn't it?
@@ -145,12 +146,12 @@ Just like this you can override any other parts of the theme. Awesome!
 ## Deploying the blog to github pages
 We've made a very simple blog. Now we'll publish the generated content as a github page.
 
-Github pages follow a simple naming convention. When github finds a repository named `<username>.github.io` for a user accout, it serves the master's
+Github pages follow a simple naming convention. When github finds a repository named `<username>.github.io` for an user accout, it serves the master's
 branch content to be accessed as <a href="#">\<username\>.github.io</a>.
 
 First create a repository in your github accout following the naming convention. For my username my repository is
-<a href="https://github.com/rcoedo/rcoedo.github.io" target="_blank">rcoedo.github.io</a>. Clone that repository and then add the content inside `public/`
-to the repository, make a commit and push it.
+<a href="https://github.com/rcoedo/rcoedo.github.io" target="_blank">rcoedo.github.io</a>. Clone and then add the content inside `public/`
+to that repository, make a commit and push it.
 ```sh
 # These commands are only orientative, is not the purpose of this article
 # to teach git basics, so I didn't test all this.
@@ -163,8 +164,7 @@ $ git push
 ```
 You'll be able to find your new blog in <a href="#">\<username\>.github.io</a>.
 
-This is good to understand how github pages work but it's not enough to maintain our blog. We don't have the sources under version control, only the compiled
-website.
+We tried out github pages, but this is not enough to maintain our blog. We have the compiled site under version control but we don't have the sources added yet.
 
 To manage my sources I keep a separate branch called `source` for the *Hugo* website and copy the generated contents from that branch to `master` when I want
 to deploy a new version. This way I keep both the source and the generated site in sync and versioned.
