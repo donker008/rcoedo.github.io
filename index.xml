@@ -35,10 +35,11 @@ rebuild your site, and deploy it to your server.&lt;/p&gt;
 
 &lt;h2 id=&#34;hugo-as-our-static-blog-generator:323399aa7f615d16192903ed2560cafe&#34;&gt;&lt;em&gt;Hugo&lt;/em&gt; as our static blog generator&lt;/h2&gt;
 
-&lt;p&gt;After trying out some static site generators for this blog I ended up with &lt;a href=&#34;https://gohugo.io/&#34;&gt;&lt;em&gt;Hugo&lt;/em&gt;&lt;/a&gt;. &lt;em&gt;Hugo&lt;/em&gt; is a really &lt;strong&gt;fast&lt;/strong&gt;
+&lt;p&gt;After trying out some static site generators for this blog, I ended up with &lt;a href=&#34;https://gohugo.io/&#34;&gt;&lt;em&gt;Hugo&lt;/em&gt;&lt;/a&gt;. &lt;em&gt;Hugo&lt;/em&gt; is a really &lt;strong&gt;fast&lt;/strong&gt;
 static site generator written in &lt;em&gt;golang&lt;/em&gt;, and it&amp;rsquo;s also a quite simple tool to get started with.&lt;/p&gt;
 
-&lt;p&gt;If you use brew type &lt;code&gt;brew install hugo&lt;/code&gt; to install it.&lt;/p&gt;
+&lt;p&gt;If you use homebrew type &lt;code&gt;brew install hugo&lt;/code&gt; to install it. You can find a more detailed guide about installing &lt;em&gt;Hugo&lt;/em&gt;
+&lt;a href=&#34;https://gohugo.io/overview/installing/&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;making-our-first-blog-with-hugo:323399aa7f615d16192903ed2560cafe&#34;&gt;Making our first blog with &lt;em&gt;Hugo&lt;/em&gt;&lt;/h2&gt;
 
@@ -102,7 +103,7 @@ $ tree
 
 &lt;p&gt;A post contains two well defined sections: a header and a body.
 The body is the markdown used to generate the html. The header contains metadata about the post itself,
-like the date for the post, the draft status or the title.&lt;/p&gt;
+like the post&amp;rsquo;s date or the title.&lt;/p&gt;
 
 &lt;p&gt;Now edit the post we&amp;rsquo;ve created and add some markdown text to it. Then compile our blog and the site will be generated under
 the &lt;code&gt;public/&lt;/code&gt; directory.&lt;/p&gt;
@@ -145,9 +146,9 @@ public/
 
 &lt;p&gt;Note that we&amp;rsquo;ve passed the option &lt;code&gt;--buildDrafts&lt;/code&gt; to tell hugo to generate pages for our drafts too, otherwise drafts will be ignored.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Hugo&lt;/em&gt; also comes with a server capable of live reloading your browser and a watcher for your files. Every time you save a file
+&lt;p&gt;&lt;em&gt;Hugo&lt;/em&gt; also comes with a server capable of live reloading your browser and a file watcher. Every time you save a file
 &lt;em&gt;Hugo&lt;/em&gt; will recompile the changes and reload your browser. All this process is very fast so you will get almost instant feedback.
-To run the server execute, run &lt;code&gt;hugo server --watch --buildDrafts&lt;/code&gt;.&lt;/p&gt;
+To run the server execute the command &lt;code&gt;hugo server --watch --buildDrafts&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Now open &lt;a href=&#34;http://localhost:1313/&#34; target=&#34;_blank&#34;&gt;localhost:1313&lt;/a&gt; on your browser and make some changes to &lt;code&gt;my-first-post.md&lt;/code&gt;.
 You&amp;rsquo;ll see how &lt;em&gt;Hugo&lt;/em&gt; compiles the changes and reloads your browser. Cool, isn&amp;rsquo;t it?&lt;/p&gt;
@@ -167,12 +168,12 @@ to see the changes you&amp;rsquo;ve made.&lt;/p&gt;
 
 &lt;p&gt;We&amp;rsquo;ve made a very simple blog. Now we&amp;rsquo;ll publish the generated content as a github page.&lt;/p&gt;
 
-&lt;p&gt;Github pages follow a simple naming convention. When github finds a repository named &lt;code&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt; for a user accout, it serves the master&amp;rsquo;s
+&lt;p&gt;Github pages follow a simple naming convention. When github finds a repository named &lt;code&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt; for an user accout, it serves the master&amp;rsquo;s
 branch content to be accessed as &lt;a href=&#34;#&#34;&gt;&amp;lt;username&amp;gt;.github.io&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;First create a repository in your github accout following the naming convention. For my username my repository is
-&lt;a href=&#34;https://github.com/rcoedo/rcoedo.github.io&#34; target=&#34;_blank&#34;&gt;rcoedo.github.io&lt;/a&gt;. Clone that repository and then add the content inside &lt;code&gt;public/&lt;/code&gt;
-to the repository, make a commit and push it.&lt;/p&gt;
+&lt;a href=&#34;https://github.com/rcoedo/rcoedo.github.io&#34; target=&#34;_blank&#34;&gt;rcoedo.github.io&lt;/a&gt;. Clone and then add the content inside &lt;code&gt;public/&lt;/code&gt;
+to that repository, make a commit and push it.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;# These commands are only orientative, is not the purpose of this article
 # to teach git basics, so I didn&#39;t test all this.
@@ -186,8 +187,7 @@ $ git push
 
 &lt;p&gt;You&amp;rsquo;ll be able to find your new blog in &lt;a href=&#34;#&#34;&gt;&amp;lt;username&amp;gt;.github.io&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;This is good to understand how github pages work but it&amp;rsquo;s not enough to maintain our blog. We don&amp;rsquo;t have the sources under version control, only the compiled
-website.&lt;/p&gt;
+&lt;p&gt;We tried out github pages, but this is not enough to maintain our blog. We have the compiled site under version control but we don&amp;rsquo;t have the sources added yet.&lt;/p&gt;
 
 &lt;p&gt;To manage my sources I keep a separate branch called &lt;code&gt;source&lt;/code&gt; for the &lt;em&gt;Hugo&lt;/em&gt; website and copy the generated contents from that branch to &lt;code&gt;master&lt;/code&gt; when I want
 to deploy a new version. This way I keep both the source and the generated site in sync and versioned.&lt;/p&gt;

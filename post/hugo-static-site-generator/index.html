@@ -78,10 +78,11 @@ rebuild your site, and deploy it to your server.</p>
 
 <h2 id="hugo-as-our-static-blog-generator:323399aa7f615d16192903ed2560cafe"><em>Hugo</em> as our static blog generator</h2>
 
-<p>After trying out some static site generators for this blog I ended up with <a href="https://gohugo.io/"><em>Hugo</em></a>. <em>Hugo</em> is a really <strong>fast</strong>
+<p>After trying out some static site generators for this blog, I ended up with <a href="https://gohugo.io/"><em>Hugo</em></a>. <em>Hugo</em> is a really <strong>fast</strong>
 static site generator written in <em>golang</em>, and it&rsquo;s also a quite simple tool to get started with.</p>
 
-<p>If you use brew type <code>brew install hugo</code> to install it.</p>
+<p>If you use homebrew type <code>brew install hugo</code> to install it. You can find a more detailed guide about installing <em>Hugo</em>
+<a href="https://gohugo.io/overview/installing/" target="_blank">here</a>.</p>
 
 <h2 id="making-our-first-blog-with-hugo:323399aa7f615d16192903ed2560cafe">Making our first blog with <em>Hugo</em></h2>
 
@@ -145,7 +146,7 @@ $ tree
 
 <p>A post contains two well defined sections: a header and a body.
 The body is the markdown used to generate the html. The header contains metadata about the post itself,
-like the date for the post, the draft status or the title.</p>
+like the post&rsquo;s date or the title.</p>
 
 <p>Now edit the post we&rsquo;ve created and add some markdown text to it. Then compile our blog and the site will be generated under
 the <code>public/</code> directory.</p>
@@ -188,9 +189,9 @@ public/
 
 <p>Note that we&rsquo;ve passed the option <code>--buildDrafts</code> to tell hugo to generate pages for our drafts too, otherwise drafts will be ignored.</p>
 
-<p><em>Hugo</em> also comes with a server capable of live reloading your browser and a watcher for your files. Every time you save a file
+<p><em>Hugo</em> also comes with a server capable of live reloading your browser and a file watcher. Every time you save a file
 <em>Hugo</em> will recompile the changes and reload your browser. All this process is very fast so you will get almost instant feedback.
-To run the server execute, run <code>hugo server --watch --buildDrafts</code>.</p>
+To run the server execute the command <code>hugo server --watch --buildDrafts</code>.</p>
 
 <p>Now open <a href="http://localhost:1313/" target="_blank">localhost:1313</a> on your browser and make some changes to <code>my-first-post.md</code>.
 You&rsquo;ll see how <em>Hugo</em> compiles the changes and reloads your browser. Cool, isn&rsquo;t it?</p>
@@ -210,12 +211,12 @@ to see the changes you&rsquo;ve made.</p>
 
 <p>We&rsquo;ve made a very simple blog. Now we&rsquo;ll publish the generated content as a github page.</p>
 
-<p>Github pages follow a simple naming convention. When github finds a repository named <code>&lt;username&gt;.github.io</code> for a user accout, it serves the master&rsquo;s
+<p>Github pages follow a simple naming convention. When github finds a repository named <code>&lt;username&gt;.github.io</code> for an user accout, it serves the master&rsquo;s
 branch content to be accessed as <a href="#">&lt;username&gt;.github.io</a>.</p>
 
 <p>First create a repository in your github accout following the naming convention. For my username my repository is
-<a href="https://github.com/rcoedo/rcoedo.github.io" target="_blank">rcoedo.github.io</a>. Clone that repository and then add the content inside <code>public/</code>
-to the repository, make a commit and push it.</p>
+<a href="https://github.com/rcoedo/rcoedo.github.io" target="_blank">rcoedo.github.io</a>. Clone and then add the content inside <code>public/</code>
+to that repository, make a commit and push it.</p>
 
 <pre><code class="language-sh"># These commands are only orientative, is not the purpose of this article
 # to teach git basics, so I didn't test all this.
@@ -229,8 +230,7 @@ $ git push
 
 <p>You&rsquo;ll be able to find your new blog in <a href="#">&lt;username&gt;.github.io</a>.</p>
 
-<p>This is good to understand how github pages work but it&rsquo;s not enough to maintain our blog. We don&rsquo;t have the sources under version control, only the compiled
-website.</p>
+<p>We tried out github pages, but this is not enough to maintain our blog. We have the compiled site under version control but we don&rsquo;t have the sources added yet.</p>
 
 <p>To manage my sources I keep a separate branch called <code>source</code> for the <em>Hugo</em> website and copy the generated contents from that branch to <code>master</code> when I want
 to deploy a new version. This way I keep both the source and the generated site in sync and versioned.</p>
